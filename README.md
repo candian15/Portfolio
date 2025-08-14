@@ -31,11 +31,11 @@ Eles serviram como guia para o design final do portfólio.
 📌 **Link do Figma:** [Clique aqui para ver no Figma](https://www.figma.com/design/7ENL8HAbRJAoUAiZyN7lLg/Wireframes-Portfolio?node-id=0-1&t=m0PyZFouDLtTgobx-1)
 
 ### Imagens dos Wireframes
-![Wireframe Tela 1](docs/wireframes/tela1.png)
-![Wireframe Tela 2](docs/wireframes/tela2.png)
-![Wireframe Tela 3](docs/wireframes/tela3.png)
-![Wireframe Tela 4](docs/wireframes/tela4.png)
-![Wireframe Tela 5](docs/wireframes/tela5.png)
+![Wireframe Tela 1](docs/wireframe/tela1.png)
+![Wireframe Tela 2](docs/wireframe/tela2.png)
+![Wireframe Tela 3](docs/wireframe/tela3.png)
+![Wireframe Tela 4](docs/wireframe/tela4.png)
+![Wireframe Tela 5](docs/wireframe/tela5.png)
 
 As imagens estão localizadas na pasta `/docs/wireframes`:
 ```
