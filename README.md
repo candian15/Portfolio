@@ -1,10 +1,10 @@
 # Portfólio
 
-Olá! Este é meu site Portifólio Pessoal, sou o Rafael Lopes, nascido em 2004 e natural de Belo Horizonte. Atualmente, sou estudante de Engenharia de Software na PUC Minas, onde tenho me dedicado a desenvolver habilidades em programação e construção de soluções tecnológicas. Estou em busca de oportunidades para aplicar e expandir meu conhecimento na área de desenvolvimento de software.
+Olá! Este é meu site Portifólio Pessoal, sou o Arthur Candian, nascido em 2004 e natural de Belo Horizonte. Atualmente, sou estudante de Engenharia de Software na PUC Minas, onde tenho me dedicado a desenvolver habilidades em programação e construção de soluções tecnológicas. Estou em busca de oportunidades para aplicar e expandir meu conhecimento na área de desenvolvimento de software.
 
 O portfólio foi desenvolvido utilizando HTML5 para a estruturação das páginas, CSS3 para a estilização e responsividade, além de JavaScript para adicionar interatividade, como o funcionamento do menu mobile e dos modais de detalhes dos projetos. Também foram utilizadas bibliotecas como Bootstrap para facilitar a criação dos layouts e responsividade.
 
-Link: [https://rafaellopes1810.github.io/Portfolio/](https://rafaellopes1810.github.io/Portfolio/)
+
 
 ## Estrutura do Projeto
 
@@ -55,10 +55,3 @@ O vídeo do protótipo demonstra como as páginas foram planejadas e como a nave
 
 📌 **Link do Figma:** [Clique aqui para ver no Figma](https://www.figma.com/design/7ENL8HAbRJAoUAiZyN7lLg/Wireframes-Portfolio?node-id=0-1&t=m0PyZFouDLtTgobx-1)
 
-🎥 **Assista ao vídeo do protótipo:**  
-Localizado na pasta `/docs/prototipo`:
-```
-docs
-└── prototipo
-  └── prototipo.mp4
-```
