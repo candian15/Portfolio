@@ -10,19 +10,23 @@
 
 <body>
     <nav id="nav-pc">
-        <div class="logo">Rafael Lopes</div>
+        <div class="logo">Arthur Candian</div>
         <div>
             <ul class="link-nav">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Skills</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre" data-i18n="nav-sobre">Sobre</a></li>
+                <li><a href="#experiencia" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="#projetos" data-i18n="nav-projetos">Projetos</a></li>
+                <li><a href="#contato" data-i18n="nav-contato">Contato</a></li>
             </ul>
+        </div>
+        <div class="idioma-botoes">
+            <button class="btn-idioma" onclick="changeLanguage('pt')">PT</button>
+            <button class="btn-idioma" onclick="changeLanguage('en')">EN</button>
         </div>
     </nav>
 
     <nav id="nav-mobile">
-        <div class="logo">Rafael Lopes</div>
+        <div class="logo">Arthur Candian</div>
         <div class="menu-mobile">
             <div class="icone-mobile" onclick="ativaMenu()">
                 <span></span>
@@ -30,62 +34,58 @@
                 <span></span>
             </div>
             <div class="links-menu">
-                <li><a href="#sobre" onclick="ativaMenu()">Sobre</a></li>
-                <li><a href="#experiencia" onclick="ativaMenu()">Skills</a></li>
-                <li><a href="#projetos" onclick="ativaMenu()">Projetos</a></li>
-                <li><a href="#contato" onclick="ativaMenu()">Contato</a></li>
+                <li><a href="#sobre" onclick="ativaMenu()" data-i18n="nav-sobre">Sobre</a></li>
+                <li><a href="#experiencia" onclick="ativaMenu()" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="#projetos" onclick="ativaMenu()" data-i18n="nav-projetos">Projetos</a></li>
+                <li><a href="#contato" onclick="ativaMenu()" data-i18n="nav-contato">Contato</a></li>
+                <div class="idioma-botoes-mobile">
+                    <button class="btn-idioma" onclick="changeLanguage('pt')">PT</button>
+                    <button class="btn-idioma" onclick="changeLanguage('en')">EN</button>
+                </div>
             </div>
         </div>
     </nav>
 
     <section id="perfil">
         <div class="section_foto-container">
-            <img src="assets/img/FotoPerfil.png" alt="Foto de Perfil Rafael Lopes">
+            <img src="assets/img/FotoPerfil.jpeg" alt="Foto de Perfil Arthur">
         </div>
         <div class="section_texto">
-            <p class="section_texto_p1">Olá, eu sou</p>
-            <h1 class="titulo">Rafael Lopes</h1>
-            <p class="section_texto_p2">Engenheiro de Software</p>
+            <p class="section_texto_p1" data-i18n="perfil-p1">Olá, eu sou</p>
+            <h1 class="titulo" data-i18n="perfil-h1">Arthur Candian</h1>
+            <p class="section_texto_p2" data-i18n="perfil-p2">Engenheiro de Software</p>
             <div class="btn-container">
-                <button class="btn btn-cor-2" onclick="window.open('https://docs.google.com/document/d/1ODecUQRtuUUa5LlTLPqhuM83KaZg9N8SU6M99-prIVs/edit?usp=sharing')">
+                <button class="btn btn-cor-2" onclick="window.open('https://docs.google.com/document/d/1ODecUQRtuUUa5LlTLPqhuM83KaZg9N8SU6M99-prIVs/edit?usp=sharing')" data-i18n="btn-curriculo">
                     Baixar Currículo
                 </button>
-
-                <button class="btn btn-cor-1" onclick="location.href='.#contato'">
+                <button class="btn btn-cor-1" onclick="location.href='.#contato'" data-i18n="btn-contato">
                     Contato Info
                 </button>
             </div>
             <div id="social-container">
-                <img src="assets/img/linkedin.png" alt="Meu perfil do LinkedIn" class="icone" onclick="location.href='https://www.linkedin.com/in/rafael-de-oliveira-caldeira-lopes-bba58126b/'">
-                <img src="assets/img/github.png" alt="Meu perfil do Github" class="icone" onclick="location.href='https://github.com/RafaelLopes1810/'">
+                <img src="assets/img/linkedin.png" alt="Meu perfil do LinkedIn" class="icone" onclick="location.href='https://www.linkedin.com/in/arthur-candian-de-azevedo-moia-156427277/'">
+                <img src="assets/img/github.png" alt="Meu perfil do Github" class="icone" onclick="location.href='https://github.com/acandian15/'">
             </div>
         </div>
     </section>
 
     <section id="sobre">
-        <p class="section_texto_p1">Conheça mais</p>
-        <h1 class="titulo">Sobre mim</h1>
+        <p class="section_texto_p1" data-i18n="sobre-p1">Conheça mais</p>
+        <h1 class="titulo" data-i18n="sobre-h1">Sobre mim</h1>
         <div class="section-container">
           <div class="section_foto-container">
-            <img src="assets/img/foto-sobre.png" alt="Foto de Perfil" class="sobre-foto"/>
+            <img src="assets/img/foto-sobre.jpeg" alt="Foto de Perfil" class="sobre-foto"/>
           </div>
           <div class="sobre-detalhes-container">
             <div class="sobre-containers">
-            <!-- <div class="detalhes-container">
-                <img src="assets/img/experience.png" alt="Ícone Experiência" class="icone"/>
-                <h3>Experiência</h3>
-                <p>2+ anos <br>Desenvolvimento Fullstack</p>
-              </div> --> 
               <div class="detalhes-container">
                 <img src="assets/img/education.png" alt="Ícone Educação" class="icone"/>
-                <h3>Educação</h3>
-                <p>Engenharia de Software – PUC Minas (Previsão de conclusão: 2027) <br>Ensino Médio Técnico – Cotemig (2020 - 2021)</p>
+                <h3 data-i18n="sobre-h3">Educação</h3>
+                <p data-i18n="sobre-p-educacao">Engenharia de Software – PUC Minas (Previsão de conclusão: 2027) <br>Ensino Médio Santo Tomas de Aquino (2020-2023)</p>
               </div>
             </div>
             <div class="texto-container">
-              <p>
-                Olá! Sou o Rafael Lopes, nascido em 2004 e natural de Belo Horizonte. Atualmente, sou estudante de Engenharia de Software na PUC Minas, onde tenho me dedicado a desenvolver habilidades em programação e construção de soluções tecnológicas. Estou em busca de oportunidades para aplicar e expandir meu conhecimento na área de desenvolvimento de software.
-              </p>
+              <p data-i18n="sobre-texto">Olá! Sou o Arthur Candian, nascido em 2004 e natural de Belo Horizonte. Atualmente, sou estudante de Engenharia de Software na PUC Minas, onde tenho me dedicado a desenvolver habilidades em programação e construção de soluções tecnológicas. Estou em busca de oportunidades para aplicar e expandir meu conhecimento na área de desenvolvimento de software.</p>
             </div>
           </div>
         </div>
@@ -93,165 +93,140 @@
     </section>
 
     <section id="experiencia">
-        <p class="section_texto_p1">Veja minhas</p>
-        <h1 class="titulo">Skills</h1>
+        <p class="section_texto_p1" data-i18n="skills-p1">Veja minhas</p>
+        <h1 class="titulo" data-i18n="skills-h1">Skills</h1>
         <div class="detalhes-experiencia-container">
             <div class="sobre-containers">
                 <div class="detalhes-container">
-                    <h2 class="experiencia-subtitulo">Desenvolvimento Frontend</h2>
+                    <h2 class="experiencia-subtitulo" data-i18n="frontend-h2">Desenvolvimento Frontend</h2>
                     <div class="article-container">
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>HTML</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>CSS</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>JavaScript</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>TypeScript</h3>
-                                <p>Intermediário</p>
+                                <p data-i18n="skills-intermediario">Intermediário</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>Angular</h3>
-                                <p>Intermediário</p>
+                                <p data-i18n="skills-intermediario">Intermediário</p>
                             </div>
                         </article>
-
-                        <!-- <article>
-                            <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Básico</p>
-                            </div>
-                        </article> -->
                     </div>
                 </div>
-
                 <div class="detalhes-container">
-                    <h2 class="experiencia-subtitulo">Desenvolvimento Backend</h2>
+                    <h2 class="experiencia-subtitulo" data-i18n="backend-h2">Desenvolvimento Backend</h2>
                     <div class="article-container">
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>Java</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>Python</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-                        
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>C#</h3>
-                                <p>Intermediário</p>
+                                <p data-i18n="skills-intermediario">Intermediário</p>
                             </div>
                         </article>
-                        
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>Springboot</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-                        
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>.NET</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>Node.js</h3>
-                                <p>Intermediário</p>
+                                <p data-i18n="skills-intermediario">Intermediário</p>
                             </div>
                         </article>
                     </div>
                 </div>
-
                 <div class="detalhes-container">
-                    <h2 class="experiencia-subtitulo">Outros</h2>
+                    <h2 class="experiencia-subtitulo" data-i18n="outros-h2">Outros</h2>
                     <div class="article-container">
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>JUnit</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
-                        
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>Pytest</h3>
-                                <p>Intermediário</p>
+                                <p data-i18n="skills-intermediario">Intermediário</p>
                             </div>
                         </article>
-                        
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>MySQL</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>PostgreSQL</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>SQL Server</h3>
-                                <p>Avançado</p>
+                                <p data-i18n="skills-avancado">Avançado</p>
                             </div>
                         </article>
-
                         <article>
                             <img src="assets/img/checkmark.png" alt="Ícone Checkmark" class="icone">
                             <div>
                                 <h3>Azure</h3>
-                                <p>Intermediário</p>
+                                <p data-i18n="skills-intermediario">Intermediário</p>
                             </div>
                         </article>
                     </div>
@@ -262,33 +237,31 @@
     </section>
 
     <section id="projetos">
-        <p class="section_texto_p1">Veja meus</p>
-        <h1 class="titulo">Projetos</h1>
+        <p class="section_texto_p1" data-i18n="projetos-p1">Veja meus</p>
+        <h1 class="titulo" data-i18n="projetos-h1">Projetos</h1>
         <div class="detalhes-experiencia-container">
           <div class="sobre-containers">
             <div class="detalhes-container cor-container">
                 <div class="article-container">
                     <img src="assets/img/Projeto1-img.png" alt="Projeto 1" class="projeto-img">
                 </div>
-                <h2 class="experiencia-subtitulo titulo-projeto">Pulse Pump</h2>
+                <h2 class="experiencia-subtitulo titulo-projeto" data-i18n="pulse-h2">Pulse Pump</h2>
                 <div class="btn-container">
-                    <button class="btn-cor-2 btn projeto-btn" onclick="location.href='https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti1-2401100-projeto-treinos'">
+                    <button class="btn-cor-2 btn projeto-btn" onclick="location.href='https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti1-2401100-projeto-treinos'" data-i18n="btn-github">
                         GitHub
                     </button>
-                    <button id="open-modal" class="btn-cor-2 btn projeto-btn">
+                    <button id="open-modal-1" class="btn-cor-2 btn projeto-btn" data-i18n="btn-detalhes">
                         Ver Detalhes
                     </button>
-                    <div id="fade" class="hide"></div>
-                    <div id="modal" class="hide">
+                    <div id="fade-1" class="hide fade"></div>
+                    <div id="modal-1" class="hide modal">
                         <div class="modal-header">
-                            <h2>Pulse Pump</h2>
-                            <a id="close-modal">X</a>
+                            <h2 data-i18n="pulse-h2">Pulse Pump</h2>
+                            <a id="close-modal-1">X</a>
                         </div>
                         <div class="modal-body">
-                            <p>
-                                Projeto feito para a faculdade no primeiro período de Engenharia de Software. O Pulse Pump é um site que tem como objetivo ajudar pessoas com
-                                sua vida na academia, fornecendo criação de fichas personalizadas e contato com outras pessoas que usam o site. Pulse Pump é projeto bem documentado
-                                e usamos HTML, CSS, Javascript, Bootstrap e Json para armazenar os dados.
+                            <p data-i18n="pulse-texto">
+                                Projeto feito para a faculdade no primeiro período de Engenharia de Software. O Pulse Pump é um site que tem como objetivo ajudar pessoas com sua vida na academia, fornecendo criação de fichas personalizadas e contato com outras pessoas que usam o site. Pulse Pump é projeto bem documentado e usamos HTML, CSS, Javascript, Bootstrap e Json para armazenar os dados.
                             </p>
                             <img src="assets/img/Projeto1-modal-img.jpeg" alt="Print do Projeto 1">
                         </div>
@@ -299,22 +272,22 @@
                 <div class="article-container">
                     <img src="assets/img/Projeto2-img.png" alt="Projeto 2" class="projeto-img">
                 </div>
-                <h2 class="experiencia-subtitulo titulo-projeto">ByteBusters</h2>
+                <h2 class="experiencia-subtitulo titulo-projeto" data-i18n="bytebusters-h2">ByteBusters</h2>
                 <div class="btn-container">
-                    <button class="btn-cor-2 btn projeto-btn" onclick="location.href='https://github.com/pucmg-aulas/ByteBusters'">
+                    <button class="btn-cor-2 btn projeto-btn" onclick="location.href='https://github.com/pucmg-aulas/ByteBusters'" data-i18n="btn-github">
                         GitHub
                     </button>
-                    <button id="open-modal" class="btn-cor-2 btn projeto-btn">
+                    <button id="open-modal-2" class="btn-cor-2 btn projeto-btn" data-i18n="btn-detalhes">
                         Ver Detalhes
                     </button>
-                    <div id="fade" class="hide"></div>
-                    <div id="modal" class="hide">
+                    <div id="fade-2" class="hide fade"></div>
+                    <div id="modal-2" class="hide modal">
                         <div class="modal-header">
-                            <h2>Este é o Modal</h2>
-                            <a id="close-modal">X</a>
+                            <h2 data-i18n="bytebusters-h2">ByteBusters</h2>
+                            <a id="close-modal-2">X</a>
                         </div>
                         <div class="modal-body">
-                            <p>
+                            <p data-i18n="modal-texto-generico">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
                                 Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
                                 voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
@@ -329,22 +302,22 @@
                 <div class="article-container">
                     <img src="assets/img/Projeto3-img.jpeg" alt="Projeto 3" class="projeto-img">
                 </div>
-                <h2 class="experiencia-subtitulo titulo-projeto">WorkLink</h2>
+                <h2 class="experiencia-subtitulo titulo-projeto" data-i18n="worklink-h2">WorkLink</h2>
                 <div class="btn-container">
-                    <button class="btn-cor-2 btn projeto-btn" onclick="location.href='https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti2-3740100-worklink'">
+                    <button class="btn-cor-2 btn projeto-btn" onclick="location.href='https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti2-3740100-worklink'" data-i18n="btn-github">
                         GitHub
                     </button>
-                    <button id="open-modal" class="btn-cor-2 btn projeto-btn">
+                    <button id="open-modal-3" class="btn-cor-2 btn projeto-btn" data-i18n="btn-detalhes">
                         Ver Detalhes
                     </button>
-                    <div id="fade" class="hide"></div>
-                    <div id="modal" class="hide">
+                    <div id="fade-3" class="hide fade"></div>
+                    <div id="modal-3" class="hide modal">
                         <div class="modal-header">
-                            <h2>Este é o Modal</h2>
-                            <a id="close-modal">X</a>
+                            <h2 data-i18n="worklink-h2">WorkLink</h2>
+                            <a id="close-modal-3">X</a>
                         </div>
                         <div class="modal-body">
-                            <p>
+                            <p data-i18n="modal-texto-generico">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
                                 Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
                                 voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
@@ -361,22 +334,20 @@
     </section>
 
     <section id="contato">
-        <p class="section_texto_p1">Gostou do que viu?</p>
-        <h1 class="titulo">Entre em contato</h1>
+        <p class="section_texto_p1" data-i18n="contato-p1">Gostou do que viu?</p>
+        <h1 class="titulo" data-i18n="contato-h1">Entre em contato</h1>
         <div class="info-contato-cima-container">
             <div class="contato-info-container">
                 <img src="assets/img/email.png" alt="Ícone Email" class="icone icone-contato icone-email">
-                <p><a href="mailto:rafaeldeoliveiracl@gmail.com">rafaeldeoliveiracl@gmail.com</a></p>
+                <p><a href="mailto:acandian15@gmail.com">acandian15@gmail.com</a></p>
             </div>
-
             <div class="contato-info-container">
                 <img src="assets/img/celular.png" alt="Ícone Celular" class="icone icone-contato">
-                <p><a href="https://w.app/rafaellopes">(31)+55 99950-4543</a></p>
+                <p><a href="https://w.app/arthurcandian">(31)+55 98951-5509</a></p>
             </div>
-
             <div class="contato-info-container">
                 <img src="assets/img/linkedin.png" alt="Ícone LinkedIn" class="icone icone-contato">
-                <p><a href="https://www.linkedin.com/in/rafael-de-oliveira-caldeira-lopes-bba58126b/">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/arthur-candian-de-azevedo-moia-156427277/">LinkedIn</a></p>
             </div>
         </div>
     </section>
@@ -385,14 +356,14 @@
         <nav>
             <div class="links-nav-container">
                 <ul class="link-nav">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#experiencia">Skills</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sobre" data-i18n="nav-sobre">Sobre</a></li>
+                    <li><a href="#experiencia" data-i18n="nav-skills">Skills</a></li>
+                    <li><a href="#projetos" data-i18n="nav-projetos">Projetos</a></li>
+                    <li><a href="#contato" data-i18n="nav-contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Rafael Lopes. Todos Direitos Reservados.</p>
+        <p data-i18n="footer-copy">Copyright &#169; 2025 Arthur Candian. Todos Direitos Reservados.</p>
     </footer>
 
     <script src="assets/script.js"></script>
