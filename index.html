@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+    
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/mediaqueries.css">
+    
 </head>
 
 <body>
@@ -343,13 +345,47 @@
             </div>
             <div class="contato-info-container">
                 <img src="assets/img/celular.png" alt="Ícone Celular" class="icone icone-contato">
-                <p><a href="https://w.app/arthurcandian">(31)+55 98951-5509</a></p>
+                <p><a href="https://wa.me/31989515509">+55 (31) 98951-5509</a></p>
             </div>
             <div class="contato-info-container">
                 <img src="assets/img/linkedin.png" alt="Ícone LinkedIn" class="icone icone-contato">
                 <p><a href="https://www.linkedin.com/in/arthur-candian-de-azevedo-moia-156427277/">LinkedIn</a></p>
             </div>
         </div>
+         <!-- Formulário -->
+    <form id="form-contato">
+      <input type="text" name="user_name" placeholder="Nome" required>
+      <input type="email" name="user_email" placeholder="E-mail" required>
+      <textarea name="message" placeholder="Mensagem" required></textarea>
+      <button type="submit" class="btn btn-cor-1"><i class="fas fa-paper-plane"></i> Enviar</button>
+    </form>
+  </section>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Inicializa com sua chave pública
+    (function() {
+      emailjs.init({
+        publicKey: "dxwpaENKkxSO0btAJ"
+      });
+    })();
+
+    // Captura o envio do formulário
+    document.getElementById("form-contato").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_bsfihiw", "template_sjik92u", this)
+        .then(() => {
+          alert("Mensagem enviada com sucesso!");
+          this.reset();
+        }, (error) => {
+          alert("Erro ao enviar mensagem: " + JSON.stringify(error));
+        });
+    });
+  </script>
+</body>
+</html>
     </section>
 
     <footer>
